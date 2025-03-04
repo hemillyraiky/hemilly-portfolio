@@ -60,10 +60,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    text-align: left;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -161,7 +162,7 @@ body {
     color: var(--cor-quaternaria);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .cabecalho {
         padding: 10%;
     }
@@ -172,10 +173,22 @@ body {
 
     .apresentacao {
         flex-direction: column-reverse;
-        padding: 5%;
+        align-items: center;
+        text-align: left;
     }
 
     .apresentacao__conteudo {
-        width: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao {
+        padding: 5%;
+        text-align: left;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
     }
 }
